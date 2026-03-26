@@ -1,0 +1,174 @@
+OOPS core principles - 
+1. Encapsulation - Binding data members and functions acting on them together
+2. Abstraction - Hiding internal implementation from external entities
+3. Polymorphism - Ability to take multiple forms - compile time and run time, 
+4. Inheritance - Inheriting properties from another class or interface
+
+Access specifiers - public, private, protected, default
+
+Abstract class and interface - interface generally abstract, abstract class can hold abstract methods
+
+
+Java 8 features - 
+1. Functional interface
+2. Lambda expression
+3. Static and default methods for functional interface
+4. ForEach method, removeIf, replaceAll, sort, compute, merge, getOrDefault, putIfAbsent
+5. Stream package
+6. Time package
+7. Optional class
+8. Concurrency API improvement - Synchronized List, Set and Map, ConcurrentHashMap, CompletableFuture
+9. Permgen replace by Metaspace
+
+Stream operations - 
+Intermediate operations - distinct, sorted, map, flatmap, skip, iimit, filter, peek
+Terminal operations - forEach, findFirst, findAny, anyMatch, allMatch, toArray, reduce, collect, max, count, min, noneMatch
+
+
+Java 11 features
+1. String methods - strip, stripLeading, stripTrailing, isBlank, lines, repeat
+2. No free for commercial use
+3. var in lambda expression - Must specify var on all parameters or none with paranthesis
+
+Java 17 features - 
+1. Sealed class
+2. Pattern matching in the switch expression
+3. Removed GraalVM, if need to use use separately
+4. Applet deprecated
+5. Text blacks - """ text here """
+6. Spring boot 3 support
+
+
+
+1. Reverse string
+2. Sort with lambda expression
+3. Output - 
+String s1 = "abc";
+String s2 = "abc";
+
+System.out.println("s1 == s2 is:" + s1 == s2);
+
+4. [1,2,2,2,2,3,4,5,6,7,8,8,8,8,8];
+5. List<String> listStr = Arrays.asList("")
+
+
+List<String> names = Arrays.asList("Alice", "John", "Bob");
+
+If list of objects have of type numbers
+DatabaseAutoConfiguration
+
+
+package com.fis.programming-interviews;
+
+public class String Programs {
+
+	static void main(String[10] args) {
+		String s = "abc"
+		System.out.println(s);
+	}
+}
+
+Wrapper class and need
+Singleton class
+Diamond problem
+Funtional interfaces available
+Generic class and method
+
+
+Create REST API with standards
+If 403 error found what will you do
+
+
+OOPS concepts - 
+1. Encapsulation
+2. Abstraction
+3. Polymorphism
+4. Inheritance
+
+Immutable - 
+1. final class
+2. private final variables with no setters
+3. Mutable variable - create new object and return in getter
+
+Singleton - 
+1. private constructor
+2. private static instance and static getInstance method
+3. Thread safety - synchronized keyword, synchronized block
+	puclic class Singleton {
+		private static Singleton INSTANCE = null;
+		
+		private Singleton() {}
+		
+		public static Singleton getInstance() {
+			if(INSTANCE == null) {
+				synchronized(Singleton.class) {
+					if(INSTANCE == null) {
+						INSTANCE = new Singleton();
+					}
+				}
+			}
+			return INSTANCE;
+			
+			OR
+			
+			return BillPlugInstance.INST;
+		}
+		
+		private static class BillPlugInstance {
+			private static final Singleton INST = new Singleton();
+		}
+	}
+	
+	
+Garbage collectors - 
+1. Serial GC
+2. Parallel GC
+3. CMS(Concurrent Mark Sweep) GC
+4. G1(Garbage First) GC
+5. Z GC
+6. Shenandoah GC
+7. Epsilon GC
+
+Java 8 features
+1. Declarative features
+2. Functional Interface
+3. Static and default methods in functional interfaces
+4. Stream framework with Lambda and Method references (java.util.stream)
+5. Time framework (java.time)
+6. Util framework changes - Optional class, removeIf method, getOrDefault
+7. Nashorn JavaScript engine
+8. PermGen to Metaspace
+9. CompletableFuture
+
+Design patterns - 
+	Creation patterns - 
+		1. Singleton
+		2. Factory
+		3. Abstract Factory
+		4. Builder
+		5. Prototype
+	
+	Structural patterns -
+		1. Facade
+		2. Adapter
+		3. Visitor
+		
+	Behavioural patterns -
+		1. Iterator
+		2. Strategy
+		3. Observer
+		
+		
+spring-boot-mail-starter
+spring.mail.host
+			username
+			password
+			properties
+				.mail
+					.smtp
+						.auth
+						.ssl
+							.trust
+							
+SimpleMailMessage
+JavaMailSender

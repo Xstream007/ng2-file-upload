@@ -1,0 +1,267 @@
+SHOW pdbs;
+ALTER SESSION SET CONTAINER = ORCLPDB;
+startup
+CREATE USER dpuser IDENTIFIED BY dpuser;
+GRANT CREATE TABLE TO myfedm1;
+grant create session to myfedm1;
+GRANT UNLIMITED TABLESPACE TO myfedm1;
+GRANT CONNECT, RESOURCE, DBA TO myfedm1;
+
+$env:NODE_OPTIONS="--openssl-legacy-provider"
+set NODE_OPTIONS=--openssl-legacy-provider
+
+ng build --prod --base-href /Portal/
+
+set oracle_sid=MYFEDM
+sqlplus /nolog
+conn sys as sysdba
+shutdown abort
+startup
+
+connect to "2400" as con
+open <acc re>BI on con
+whats AIX1000D
+
+over on
+rcopy work'AIX1001D to con
+rcommit con
+
+output "C:/demo/abc.txt"
+
+loop for i in wildlist(tsa,"?")
+
+  write string(name(i))+"="+string(description(i))
+
+end loop
+
+output terminal
+
+
+const p = {
+              point: {
+                x: chart.xAxis[xAxisId].toValue(chart.xAxis[xAxisId].toPixels(this.labels[0].points[0].x, true) + this.options.labels[0].x, true),
+                y: chart.yAxis[yAxisId].toValue(chart.yAxis[yAxisId].toPixels(this.labels[0].points[0].y, true) + this.options.labels[0].y, true)
+              },
+              x: 0,
+              y: 0
+            };
+
+
+https://fisglobal-my.sharepoint.com/:v:/r/personal/deepak_nehe_fisglobal_com/Documents/Recordings/FAME%204GL%20training-20230505_140823-Meeting%20Recording.mp4?csf=1&web=1&e=5eZTj8
+https://jira.fis.dev/
+https://fislink.fisglobal.com/
+
+http://localhost:8085/svn/PS/Implementation/trunk/TSA
+u:svn5735560; p:Ochetandanmal!5560
+
+10.49.64.10
+8085 10.148.45.71:3263
+
+
+P613953
+Mnbvcxz!90
+Mnbvcxz!93
+Mnbvcxz!94
+
+sudo /bin/su - marketmap
+
+https://fisglobal.sharepoint.com/:x:/r/teams/TradingCompliance-ProfessionalServices/_layouts/15/Doc.aspx?sourcedoc=%7B31172CA1-86B4-4C18-840A-811704E9AB2C%7D&file=TSA_Action%20items%20Tracker.xlsx&action=default&mobileredirect=true&xsdata=MDV8MDJ8fGMzODc3Mjk4NDE1NDQ4MzliNDk2MDhkY2FjNzBhNzVkfGUzZmY5MWQ4MzRjODRiMTVhMGI0MTg5MTBhNmFjNTc1fDB8MHw2Mzg1NzQ4NDcwMjQwMTg1ODJ8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaVYybHVNeklpTENKQlRpSTZJazkwYUdWeUlpd2lWMVFpT2pFeGZRPT18MXxMMk5vWVhSekx6RTVPamswWmpjeE5qSmpMV0V3TUdFdE5HUXhNQzFoTm1OaExUazBNamt6TlRJMk5XWTROVjlrWWpjM1l6UmpaaTFrTUdKbExUUXpaak10WVdNeU55MHhOelpoT1RVd05EYzNNbU5BZFc1eExtZGliQzV6Y0dGalpYTXZiV1Z6YzJGblpYTXZNVGN5TVRnNE56a3dNVGMyT1E9PXw5MzAxZTVlYjg2MTc0ODNmNTI0NzA4ZGNhYzcwYTc1Ynw2NmZiMDFlMGE2ZTM0ZjYyYTcxYjhkZDBmMDM4ODdkMA%3D%3D&sdata=Y05LT09DVlRhQTJkbDVYUFpWRE1yd1dMZ0hmaWJpTEtlYjF3aHllQzRFOD0%3D&ovuser=e3ff91d8-34c8-4b15-a0b4-18910a6ac575%2CChetanDanmal.Oswal%40FISGLOBAL.COM
+
+P#(1036024)
+
+Th1nkB00k!
+
+bstd-ict-servicedesk@resbank.co.za
+
+Java is an object oriented language and some concepts may be new. Take breaks when needed, and go over the examples as many times as needed.
+-- notes for deployment 
+WinSCp
+	1)10.36.47.220 HostName port number 22 Username:p613953
+	2)Drag drop files
+putty 
+	3)sudo /bin/su - marketmap
+	4)cd /map_app/3rdpartyapp/apache-tomcat-9.0.83/bin
+	5)./shutdown.sh
+	6)cd ../webapps/
+	7)ls 
+	8)rm -r DataPortal
+	9)cp (path of .war cp present include name) (. = path_new_present)
+   10)start tomcat goto bin and run startup.sh
+   11)check by tail -f logs/catalina.out server start or not
+   12)stop server and delet the .war(newly copy) rm dataportals.war
+   13)rename folder as DataPol if name not correct "mv present_name new_name"
+   
+   
+   
+http://10.7.139.166:8090/fedm/#/login
+ 
+10.7.139.166
+ 
+VLMAZMAPPS01
+ 
+su - apdev
+ 
+ 
+http://dev65220.resbank.co.za:8080/fedm
+
+
+Data Migration - 
+
+Server - dev76201.resbank.co.za
+
+port - 2048
+
+SID - biccdev
+
+FIS_DEV user created.
+
+Password:Kzj$Z#RtrUV07
+QA Username - p1036024
+QA Password - N3wp#ss_2025
+
+ 
+1.	Establishing a Single Version of the Truth
+2.	Defining Relationships
+3.	Managing Interactions
+4.	Enabling Enrichment and Insights
+
+mvn clean package
+
+
+
+SELECT 
+	COLUMN_NAME,
+	DATA_TYPE,
+	NULLABLE
+FROM
+	ALL_TAB_COLUMNS
+WHERE
+	TABLE_NAME = 'TABLE'
+	AND OWNER = 'DB'
+	
+	
+select table_name from all_tables; 
+	
+
+dev65230	10.36.47.230	FEDM - Application
+dev65231	10.36.47.231	FAME - Db Server
+
+qua65230	10.37.47.230	FEDM - Application
+qua65231	10.37.47.231	FAME - DB Server
+
+
+mvn install:install-file -Dfile=C:/Users/e5735560/Documents/repo/transaction-1.2.jar -DgroupId=com.timeiq -DartifactId=transaction -Dversion=1.2 -Dpackaging=jar
+
+mvn install:install-file -Dfile=C:/Users/e5735560/Documents/repo/timeiq.jar -DgroupId=com.fame -DartifactId=timeiq -Dversion=1.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=C:/Users/e5735560/Documents/repo/MLClassifier.jar -DgroupId=com.datainventa.ml -DartifactId=MLClassifier -Dversion=1.0 -Dpackaging=jar
+
+mvn clean package assembly:single
+
+java -jar abc.jar para > out.txt &
+
+
+width 200
+show v
+length full
+
+FIGI.LEVEL.FIGI_CODE.COLUMNS.D
+
+
+0 1 1
+1 1 2
+
+1 2 3
+2 3 5
+3 5 8
+5 8 13
+
+/map_app/fedm_home/customLoader/RRR_SecureLoader
+
+connect to "2400" on "localhost" as dev
+open <acc r> transaction on dev
+
+
+FIGI.?.BBG01BX5RY48.RATE_AMOUNT.D
+
+
+rateAuth
+para
+secData
+unsecData
+
+
+reporting_entity  submission_datetime   count_of_transactions   status   		type
+FirstRand Bank    dateWithTimestamp     100                     Pass     		Secure
+FirstRand Bank    dateWithTimestamp     100                     Fail     		Unsecure
+ABSA    		  dateWithTimestamp     100                     Not Submitted   
+
+
+ps aux | grep java
+awk '/ERROR/ {found=1; count=50} found && count-- > 0' logs/app.log
+
+
+awk '/ERROR/ {found=1; count=50} found && count-- > 0' app.log
+
+
+
+[LEI.API.UNSECURE.L2.ORIGINALDATE.01AUG2023.C, LEI.API.UNSECURE.L2.ORIGINALDATE.01NOV2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.01OCT2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.02DEC2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.03AUG2023.C, LEI.API.UNSECURE.L2.ORIGINALDATE.05NOV2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.05SEP2022.C, LEI.API.UNSECURE.L2.ORIGINALDATE.06MAR2025.C, LEI.API.UNSECURE.L2.ORIGINALDATE.06NOV2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.07NOV2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.08NOV2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.08OCT2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.08SEP2022.C, LEI.API.UNSECURE.L2.ORIGINALDATE.09JAN2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.09JUN2023.C, LEI.API.UNSECURE.L2.ORIGINALDATE.09OCT2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.10MAY2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.10OCT2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.11JAN2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.11OCT2022.C, LEI.API.UNSECURE.L2.ORIGINALDATE.11OCT2023.C, LEI.API.UNSECURE.L2.ORIGINALDATE.12NOV2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.12SEP2023.C, LEI.API.UNSECURE.L2.ORIGINALDATE.13JUN2023.C, LEI.API.UNSECURE.L2.ORIGINALDATE.13MAY2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.13OCT2022.C, LEI.API.UNSECURE.L2.ORIGINALDATE.14NOV2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.15JUN2023.C, LEI.API.UNSECURE.L2.ORIGINALDATE.16JAN2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.19MAR2025.C, LEI.API.UNSECURE.L2.ORIGINALDATE.19SEP2022.C, LEI.API.UNSECURE.L2.ORIGINALDATE.20JAN2023.C, LEI.API.UNSECURE.L2.ORIGINALDATE.21SEP2022.C, LEI.API.UNSECURE.L2.ORIGINALDATE.22SEP2022.C, LEI.API.UNSECURE.L2.ORIGINALDATE.26OCT2023.C, LEI.API.UNSECURE.L2.ORIGINALDATE.27OCT2023.C, LEI.API.UNSECURE.L2.ORIGINALDATE.27SEP2022.C, LEI.API.UNSECURE.L2.ORIGINALDATE.28AUG2023.C, LEI.API.UNSECURE.L2.ORIGINALDATE.28SEP2022.C, LEI.API.UNSECURE.L2.ORIGINALDATE.30OCT2022.C, LEI.API.UNSECURE.L2.ORIGINALDATE.30SEP2024.C, LEI.API.UNSECURE.L2.ORIGINALDATE.31AUG2022.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.01JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.01SEP2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.02NOV2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.03AUG2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.03JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.03OCT2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.04JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.04OCT2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.05JAN2024.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.05JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.05OCT2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.05SEP2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.06JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.07JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.07SEP2022.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.07SEP2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.08JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.08SEP2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.10JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.10JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.11JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.11SEP2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.12JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.12JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.13APR2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.13JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.13JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.13SEP2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.14APR2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.14JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.14JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.15JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.15JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.16JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.17APR2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.17JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.17JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.17OCT2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.18JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.18OCT2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.19JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.19JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.19OCT2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.20JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.20JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.21FEB2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.21JAN2025.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.21JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.21JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.22JAN2025.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.22JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.22JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.23JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.24JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.24JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.24OCT2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.25JUL2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.26JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.27JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.27OCT2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.28AUG2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.28JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.29JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.29SEP2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.30JUN2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.30NOV2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.31AUG2023.C, OTHR.API.UNSECURE.L2.ORIGINALDATE.31OCT2024.C, SOURCEIDCO.API.UNSECURE.L2.ORIGINALDATE.06FEB2023.C]
+
+TERM = "mno.txt"
+OUTPUT <ACCESS OVERWRITE> FILE(TERM)
+
+
+
+
+date 1850 to 2025
+series con.1.Workspace91.Sheet1.A:precision index by date
+con.1.Workspace91.Sheet1.A=normal(89.9,DATE)
+con.1.Workspace91.Sheet1.A=normal(DATE,787.9)
+con.1.Workspace91.Sheet1.A=normal(DATE,787.9)
+connect to "2600" as con
+open <Acc wr>bi on con
+rcopy bi'con.1.Workspace91.Sheet1.A=con.1.Workspace12.Sheet2.A
+rcopy bi'con.1.Workspace91.Sheet1.A to con.1.Workspace12.Sheet2.A
+rcopy work'con.1.Workspace91.Sheet1.A as con.1.Workspace91.Sheet1.A to Bi
+rcommit con;
+
+
+-/count = 100
+loop for d in date
+		date d
+		set work'con.1.Workspace91.Sheet1.A = count
+		set count = count + 100
+	end
+	
+	
+	
+	
+	1. QA reconciliation
+	2. Rates data migration changes
+	3. Scheduler changes
+	4. BA Validation check
+	5. Data migration jar updated in DEV, QA, UAT
+	
+	
+	C:\Users\e5735560\Downloads\SecureJSONFiles11\SecureJSONFiles
+	
+	https://wiki.fisglobal.com/display/mma/RRR+ML+Classifier
+	
+	
+	ML Classifier 
+	1. Configurable FAME db
+	2. Add ML Result 
+	3. Check UI details with Ashish
+	4. Upload ML code
+	
+	SERIES_NAME DB_Name FILE_ID PTI
+-1
+SeriesName : value | SeriesName : value
+
+https://wiki.fisglobal.com/display/html/RUF+Deliverables
+
+-/final_current_q_val = precision(number(precfmt(current_q_val,*,2)))
+
+java -XX:+PrintFlagsFinal
+
+java -XX:+PrintFlagsFinal -version | findstr /i "HeapSize"
